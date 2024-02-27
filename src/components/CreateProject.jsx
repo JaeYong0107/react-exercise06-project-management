@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Modal from "./Modal";
 
-export default function CreateProject({ onDelete, onAdd }) {
+export default function CreateProject({ onHome, onAdd }) {
     const style = {
         inputContainer: "flex flex-col w-full",
         label: "font-semibold text-stone-500",
@@ -42,7 +42,7 @@ export default function CreateProject({ onDelete, onAdd }) {
             <div className='flex flex-col items-center justify-center w-2/3 h-full pr-60 pl-16 gap-6 '>
                 <div className="flex justify-end gap-7 mt-16 mb-4 w-full">
                     <button className="text-lg font-medium"
-                        onClick={onDelete}>Cancel</button>
+                        onClick={onHome}>Cancel</button>
                     <button className="w-32 h-14 rounded-lg bg-black text-white text-lg font-medium "
                         onClick={handleSave}>Save</button>
                 </div>
